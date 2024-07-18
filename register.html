@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTech Education</title>
+
+    <!--------font awsome------->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!----GOOGLE FONTS ( Montserrat)------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!---- SWIPER JS------->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/register.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container nav__container" style="color: black;">
+            <a href="index.html">
+                <h4 class="logo">TTech Online Education</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="learn.html">Learn Online</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+
+    <section class="categories">
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="./images/a.png" style="width:100%">
+      <div class="text">Caption Text</div>
+      <!-- <video width="100%"  autoplay controls>
+        <source src="./E-Learning_infographic_video_with_Adobe_After_effects(1080p).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video> -->
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="./images/back5.avif" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="./images/back6.avif" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+    </section>
+    <h3>Register Now and Start Learning!</h3>
+    <div class="container contact_container">
+        <form action="" onsubmit="myFunction2()" method="post" class="contact_form">
+            <h4>Please Fill out the form </h4>
+            <div class="form_name">        
+                <input type="text" name="firstname" placeholder="First Name" required>
+                <input type="text" name="lastname" placeholder="Last Name" required>
+            </div>
+            <div class="form_name">
+                <input type="number" name="age" placeholder="Age" required>
+                 <select>  
+                    <option value="male">Male</option>  
+                    <option value="female">Female</option>  
+                 </select> 
+            </div> 
+                 <input type="email" name="email" placeholder="Your E-mail" required>
+                 <input type="number" name="phone" placeholder="Your Phone number" required>
+                 <label> Choose Course:  </label>
+                 <select>  
+                    <option value="Course">Course</option>  
+                    <option value="BCA">BCA</option>  
+                    <option value="BBA">BBA</option>  
+                    <option value="B.Tech">B.Tech</option>  
+                    <option value="MBA">MBA</option>  
+                 </select> 
+                 <label> Choose Day:  </label>
+                 <select>  
+                    <option value="Course">Monday,Wednesday & Friday</option>  
+                    <option value="BCA">Tuesday,Thursday & Saturday</option>  
+                    <option value="BBA">Saturday & Sunday</option>  
+                    <option value="B.Tech">All Days except Saturday & Sunday</option>  
+                    <option value="MBA">All Days</option>  
+                 </select> 
+                 <textarea name="message"  rows="7" placeholder="Message"></textarea required>
+                 <button   type="submit" class="btn btn-primary">Register</button>
+                 <div id="snackbar">Congratulations.....You have registered Successfully...</div>
+          </form>
+        
+          
+          <video width="500rem"  autoplay controls>
+            <source src="./E-Learning_infographic_video_with_Adobe_After_effects(1080p).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+    </div>
+
+
+    <div class="side">
+       <button>Class Room 1</button>
+       <button>Class Room 2</button>
+       <button>Class Room 3</button>
+       <button>Class Room 4</button>
+       <button>Class Room 5</button>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>TTech Education</h4>
+                </a>
+                <p>Online Education Center</p>
+                <p>  </p>
+            </div>
+
+            <div class="foote_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="learn.html">Learn Online</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+
+            <div class="foote_3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="foote_4">
+                <h4>Contact us</h4>
+                <div>
+                    <p>+251964196866</p>
+                    <p>ttecheducation@gmail.com</p>
+                </div>
+
+                <ul class="footer_socials">
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <small> copyright &copy; 2024 TTech Services PLC.</small>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

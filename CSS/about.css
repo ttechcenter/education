@@ -1,0 +1,236 @@
+:root {
+  --color-primary: orange;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 196, 0, 0.7);
+  --color-black: #000;
+  --color-bg: #2151a1;
+  --color-bg1: #043282;
+  --color-bg2: #1364ef;
+
+
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all 400ms ease;
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background:linear-gradient(rgba(46, 46, 46, 0.822), rgba(78, 78, 78, 0.541)), 
+  url(/images/back7.jpg); */
+  background: #001231;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 140vh;
+}
+
+/*===============================ACHIVMENT====================================*/
+
+
+
+.about_achivment {
+  margin-top: 3rem;
+}
+
+.about_achivment-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 5rem;
+}
+
+.about_achivment-right p {
+  margin: 1.6rem 0 1.5rem;
+}
+
+.about_achivment-left p{
+  padding-top: 2rem;
+  text-align: justify;
+}
+
+.achivments_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.achivment_card {
+  background: white;
+  color: #000;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.achivment_card:hover {
+  background: rgb(255, 185, 55);
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+
+}
+
+.achivment_icon {
+  background: var(--color-danger);
+  border-radius: 1rem;
+  padding: 0.6rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.achivment_card:nth-child(2) .achivment_icon {
+  background: var(--color-success);
+}
+
+.achivment_card:nth-child(3) .achivment_icon {
+  background: var(--color-primary);
+}
+
+.achivment_card p {
+  margin-top: 1rem;
+}
+
+/*===============================MEET OUR TEAM====================================*/
+.team {
+  background: rgb(255, 255, 255);
+  color: #000;
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+
+}
+
+.team_member-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem
+}
+
+.team_member {
+  background:rgb(255, 231, 98);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.team_member:hover {
+  background:rgb(255, 255, 255);
+  color: #000;
+  border-color: var(--color-primary);
+}
+
+.team_member-image img {
+  /* border-radius: 2rem; */
+  filter: saturate(0);
+  border-radius: 1rem;
+}
+
+.team_member-image img:hover {
+  filter: saturate(1);
+}
+
+.team_member-info {
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.team_member-info h4 {
+  margin-bottom: 1rem;
+}
+
+.team_member-info p {
+  color: black;
+}
+
+.team_member-socials {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-primary);
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+  transition: var(--transition);
+
+}
+
+.team_member-socials a {
+  padding: 1rem;
+}
+
+.team_member:hover .team_member-socials {
+  right: 0;
+
+}
+
+/*===============================MEDIA QUERIES FOR TABLET====================================*/
+
+@media screen and (max-width:1024px) {
+
+  .container {
+    width: var(--container-width-md);
+  }
+
+  .about_achivment {
+    margin-top: 2rem;
+  }
+
+  .about_achivment-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .about_achivment-left {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .team_member-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem;
+  }
+
+  .team_member {
+    padding: 1rem;
+  }
+}
+
+/*===============================MEDIA QUERIES FOR PHONE====================================*/
+
+@media screen and (max-width:600px) {
+  .team_member-info h4{
+    font-size: 1rem;
+  }
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  .achivments_cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+
+  .team_member-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+
+  .team_member {
+    padding: 0;
+  }
+
+  .team_member-container p {
+    margin-bottom: 1.5rem;
+  }
+}
